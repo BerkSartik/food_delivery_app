@@ -1,0 +1,59 @@
+name: flutter_food_delivery_app
+
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_mobx: ^2.0.6+5
+  mobx: ^2.1.4
+  provider: ^6.0.5
+
+  # JSON
+  json_annotation: ^4.7.0
+
+  # Language
+  easy_localization: ^3.0.1
+
+  # Local Database
+  shared_preferences: ^2.0.17
+
+  # Network
+  vexana: ^3.4.0
+  dio: ^5.0.0
+  http: ^0.13.5
+
+  # UI
+  cupertino_icons: ^1.0.2
+  kartal: ^3.0.1
+  line_icons: ^2.0.1
+
+  # Log
+  logger: ^1.1.0
+
+dev_dependencies:
+  build_runner: ^2.4.6
+  flutter_lints: ^2.0.0
+  json_serializable: ^6.5.4
+  mobx_codegen: ^2.1.1
+
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lang/
+    - assets/fonts/
