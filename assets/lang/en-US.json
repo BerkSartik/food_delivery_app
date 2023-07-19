@@ -1,0 +1,75 @@
+{
+    "onboard": {
+        "first": {
+            "title": "Order Your Food",
+            "description": "Now you can order your food anytime from your mobile."
+        },
+        "second": {
+            "title": "Safe Food Transfer",
+            "description": "We maintain safety and cleanliness while preparing your food."
+        },
+        "third": {
+            "title": "Fast Delivery",
+            "description": "We deliver your food immediately at your doorsteps."
+        },
+        "navigation": {
+            "skip": "Skip",
+            "end": "End"
+        }
+    },
+    "authentication": {
+        "email": "Email",
+        "password": "Password",
+        "or": "OR",
+        "signUp": {
+            "title": "Sign up",
+            "fullName": "Full Name",
+            "pwdConfirm": "Confirm Password",
+            "withoutAccount": "Already have an account?"
+        },
+        "signIn": {
+            "title": "Sign in",
+            "rememberMe": "Remember Me",
+            "forgotPwd": "Forgot Password",
+            "withoutAccount": "Don't have an account?"
+        },
+        "socialLogin": {
+            "google": "Login with Google",
+            "facebook": "Login with Facebook"
+        },
+        "verification": {
+            "title": "Verification",
+            "description": "We've send you the verification code on",
+            "buttonLabel": "CONTINUE",
+            "reSend": "Re-send code in"
+        },
+        "resetPassword": {
+            "title": "Reset Password",
+            "description": "Please enter your email address to request a password reset",
+            "buttonLabel": "SEND"
+        },
+        "signOut": {
+            "title": "Sign Out"
+        }
+    },
+    "navigation": {
+        "bottom": {
+            "explore": "Explore",
+            "events": "Events",
+            "map": "Map",
+            "profile": "Profile"
+        },
+        "drawer": {
+            "message": "Message",
+            "calender": "Calender",
+            "bookmark": "Bookmark",
+            "contactUs": "Contact Us",
+            "settings": "Settings",
+            "faq": "F.A.Q"
+        }
+    },
+    "search": {
+        "title": "Search"
+    },
+    "pageNotFound": "Page not found."
+}
