@@ -12,16 +12,18 @@ import 'core/init/notifier/provider_list.dart';
 
 Future<void> main() async {
   await _init();
-  runApp(MultiProvider(
-    providers: [
-      ...ApplicationProvider.instance.dependItems,
-    ],
-    child: EasyLocalization(
-      supportedLocales: LanguageManager.instance!.supportedLocales,
-      path: ApplicationConstants.LANG_ASSET_PATH,
-      child: const MyApp(),
+  runApp(
+    MultiProvider(
+      providers: [
+        ...ApplicationProvider.instance.dependItems,
+      ],
+      child: EasyLocalization(
+        supportedLocales: LanguageManager.instance!.supportedLocales,
+        path: ApplicationConstants.LANG_ASSET_PATH,
+        child: const MyApp(),
+      ),
     ),
-  ));
+  );
 }
 
 Future<void> _init() async {
@@ -29,16 +31,19 @@ Future<void> _init() async {
   await EasyLocalization.ensureInitialized();
 
   LocaleManager.preferencesInit();
+  // ignore: unawaited_futures
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: Colors.transparent,
-    statusBarIconBrightness: Brightness.dark,
-    systemNavigationBarColor: Color(0xFFF5F5F5),
-    systemNavigationBarIconBrightness: Brightness.dark,
-    systemNavigationBarDividerColor: Colors.transparent,
-    statusBarBrightness: Brightness.dark,
-  ));
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Color(0xFFF5F5F5),
+      systemNavigationBarIconBrightness: Brightness.dark,
+      systemNavigationBarDividerColor: Colors.transparent,
+      statusBarBrightness: Brightness.dark,
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {

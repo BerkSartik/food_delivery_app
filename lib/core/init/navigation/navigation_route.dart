@@ -1,3 +1,5 @@
+// ignore_for_file: strict_raw_type, unreachable_switch_case
+
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery_app/view/onboard/view/onboard_view.dart';
 
@@ -8,14 +10,11 @@ import 'navigation_enums.dart';
 
 class NavigationRoute {
   Route<dynamic> generateRoute(RouteSettings args) {
-    switch (NavigationEnums.splash.normalValue(args.name)) {
-      case NavigationEnums.splash:
-        return _normalNavigate(const SplashView());
-      case NavigationEnums.onboard:
-        return _fadeRouteNavigate(const OnboardView());
-      default:
-        return _normalNavigate(const NotFoundNavigationWidget());
-    }
+    return switch (NavigationEnums.splash.normalValue(args.name)) {
+      NavigationEnums.splash => _normalNavigate(const SplashView()),
+      NavigationEnums.onboard => _fadeRouteNavigate(const OnboardView()),
+      _ => _normalNavigate(const NotFoundNavigationWidget())
+    };
   }
 
   MaterialPageRoute _normalNavigate(Widget widget, {RouteSettings? settings, bool isFullScreen = false}) {

@@ -1,3 +1,5 @@
+// ignore_for_file: inference_failure_on_function_return_type, always_declare_return_types, type_annotate_public_apis, avoid_positional_boolean_parameters
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../constants/enums/locale_keys_enum.dart';
@@ -24,7 +26,7 @@ class LocaleManager {
   Future<void> clearAllSaveFirst() async {
     if (_preferences != null) {
       await _preferences!.clear();
-      await setBoolValue(PreferencesKeys.IS_FIRST_APP, true);
+      await setBoolValue(PreferencesKeys.IS_FIRST_LOGIN, true);
     }
   }
 

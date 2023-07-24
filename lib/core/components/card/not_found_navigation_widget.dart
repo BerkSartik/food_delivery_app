@@ -5,7 +5,7 @@ import 'package:line_icons/line_icon.dart';
 import '../../init/lang/locale_keys.g.dart';
 
 class NotFoundNavigationWidget extends StatelessWidget {
-  const NotFoundNavigationWidget({Key? key}) : super(key: key);
+  const NotFoundNavigationWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
