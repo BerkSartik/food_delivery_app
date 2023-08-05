@@ -9,6 +9,7 @@ import 'core/init/lang/language_manager.dart';
 import 'core/init/navigation/navigation_manager.dart';
 import 'core/init/navigation/navigation_route.dart';
 import 'core/init/notifier/provider_list.dart';
+import 'core/init/theme/extension/theme_context_extension.dart';
 
 Future<void> main() async {
   await _init();
@@ -37,11 +38,8 @@ Future<void> _init() async {
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.dark,
-      systemNavigationBarColor: Color(0xFFF5F5F5),
-      systemNavigationBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.transparent,
       systemNavigationBarDividerColor: Colors.transparent,
-      statusBarBrightness: Brightness.dark,
     ),
   );
 }
@@ -55,6 +53,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
+      theme: context.theme,
       onGenerateRoute: NavigationRoute().generateRoute,
       navigatorKey: context.read<NavigationService>().navigatorKey,
     );

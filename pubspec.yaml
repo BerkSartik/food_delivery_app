@@ -13,6 +13,11 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Network
+  vexana: ^3.5.1
+  dio: ^5.3.1
+  http: ^1.1.0
+
   # State Management
   flutter_mobx: ^2.0.6+5
   mobx: ^2.1.4
@@ -21,35 +26,43 @@ dependencies:
   # JSON
   json_annotation: ^4.7.0
 
-  # Language
-  easy_localization: ^3.0.1
+  #Language
+  easy_localization: ^3.0.2
 
   # Local Database
-  shared_preferences: ^2.0.17
-
-  # Network
-  vexana: ^3.4.0
-  dio: ^5.0.0
-  http: ^0.13.5
+  shared_preferences: ^2.2.0
 
   # UI
   cupertino_icons: ^1.0.2
   kartal: ^3.0.1
-  line_icons: ^2.0.1
+  line_icons: ^2.0.3
+  google_fonts: ^5.1.0
+  shimmer: ^3.0.0
+  tab_indicator_styler: ^2.0.0
 
   # Log
-  logger: ^1.1.0
+  logger: ^1.4.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-    
+
   build_runner: ^2.4.6
   very_good_analysis: ^5.0.0+1
   json_serializable: ^6.5.4
   mobx_codegen: ^2.1.1
+  flutter_lorem: ^2.0.0
 
+  flutter_launcher_icons: ^0.13.1
 
+flutter_icons:
+  android: true
+  min_sdk_android: 24
+  ios: true
+  image_path_ios: "assets/launcher/icon.png"
+  image_path_android: "assets/launcher/icon.png"
+  adaptive_icon_background: "assets/launcher/background.png"
+  adaptive_icon_foreground: "assets/launcher/foreground.png"
 
 flutter:
   uses-material-design: true
