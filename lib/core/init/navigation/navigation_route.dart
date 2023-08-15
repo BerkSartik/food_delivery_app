@@ -1,8 +1,9 @@
 // ignore_for_file: strict_raw_type, unreachable_switch_case
 
 import 'package:flutter/material.dart';
-import 'package:flutter_food_delivery_app/view/onboard/view/onboard_view.dart';
+import 'package:flutter_food_delivery_app/view/tab/view/tab_view.dart';
 
+import '../../../view/authentication/onboard/view/onboard_view.dart';
 import '../../../view/splash/view/splash_view.dart';
 import '../../components/card/not_found_navigation_widget.dart';
 import 'animation/fade_navigate.dart';
@@ -13,6 +14,7 @@ class NavigationRoute {
     return switch (NavigationEnums.splash.normalValue(args.name)) {
       NavigationEnums.splash => _normalNavigate(const SplashView()),
       NavigationEnums.onboard => _fadeRouteNavigate(const OnboardView()),
+      NavigationEnums.mainTab => _normalNavigate(MainTabView()),
       _ => _normalNavigate(const NotFoundNavigationWidget())
     };
   }

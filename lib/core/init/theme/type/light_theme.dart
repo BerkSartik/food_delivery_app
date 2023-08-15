@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../constants/app/color_constants.dart';
 import '../app_theme.dart';
 
 class ThemeLight extends AppTheme {
@@ -11,11 +12,11 @@ class ThemeLight extends AppTheme {
   @override
   ThemeData? get theme => ThemeData(
         brightness: Brightness.light,
-        primaryColor: const Color(0xff9784f3),
+        primaryColor: ColorConstants.Primary,
         primaryColorLight: const Color(0xffd8d1fa),
         primaryColorDark: const Color(0xff230e8b),
-        canvasColor: const Color(0xfffafafa),
-        scaffoldBackgroundColor: const Color(0xfffafafa),
+        canvasColor: ColorConstants.Background,
+        scaffoldBackgroundColor: ColorConstants.Background,
         bottomAppBarTheme: const BottomAppBarTheme(
           color: Color(0xffffffff),
         ),
@@ -23,7 +24,7 @@ class ThemeLight extends AppTheme {
         dividerColor: const Color(0x1f000000),
         highlightColor: const Color(0x66bcbcbc),
         splashColor: const Color(0x66c8c8c8),
-        unselectedWidgetColor: const Color(0x8a000000),
+        unselectedWidgetColor: ColorConstants.Black,
         disabledColor: const Color(0x61000000),
         toggleButtonsTheme: const ToggleButtonsThemeData(
           selectedColor: Color(0xff2f12ba),
@@ -32,7 +33,7 @@ class ThemeLight extends AppTheme {
         // backgroundColor: const Color(0xffb0a2f6),
         dialogBackgroundColor: const Color(0xffffffff),
         indicatorColor: const Color(0xff3b17e8),
-        hintColor: const Color(0x8a000000),
+        hintColor: ColorConstants.Black,
         // errorColor: const Color(0xffd32f2f),
         buttonTheme: const ButtonThemeData(
           padding: EdgeInsets.only(left: 16, right: 16),
@@ -43,91 +44,91 @@ class ThemeLight extends AppTheme {
         fontFamily: GoogleFonts.redHatDisplay().fontFamily,
         textTheme: const TextTheme(
           displayLarge: TextStyle(
-            color: Color(0x8a000000),
+            color: ColorConstants.Black,
             fontSize: 57,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           displayMedium: TextStyle(
-            color: Color(0x8a000000),
+            color: ColorConstants.Black,
             fontSize: 45,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           displaySmall: TextStyle(
-            color: Color(0x8a000000),
+            color: ColorConstants.Black,
             fontSize: 36,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           headlineLarge: TextStyle(
-            color: Color(0x8a000000),
+            color: ColorConstants.Black,
             fontSize: 32,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           headlineMedium: TextStyle(
-            color: Color(0x8a000000),
+            color: ColorConstants.Black,
             fontSize: 28,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           headlineSmall: TextStyle(
-            color: Color(0xdd000000),
+            color: ColorConstants.Black,
             fontSize: 24,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           titleLarge: TextStyle(
-            color: Color(0xdd000000),
+            color: ColorConstants.Black,
             fontSize: 22,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           titleMedium: TextStyle(
-            color: Color(0xdd000000),
+            color: ColorConstants.Black,
             fontSize: 16,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           titleSmall: TextStyle(
-            color: Color(0xff000000),
+            color: ColorConstants.Black,
             fontSize: 14,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           labelLarge: TextStyle(
-            color: Color(0xdd000000),
+            color: ColorConstants.Black,
             fontSize: 14,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           labelMedium: TextStyle(
-            color: Color(0xff000000),
+            color: ColorConstants.Black,
             fontSize: 12,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           labelSmall: TextStyle(
-            color: Color(0xff000000),
+            color: ColorConstants.Black,
             fontSize: 11,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           bodyLarge: TextStyle(
-            color: Color(0xdd000000),
+            color: ColorConstants.Black,
             fontSize: 16,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           bodyMedium: TextStyle(
-            color: Color(0xdd000000),
+            color: ColorConstants.Black,
             fontSize: 14,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
           ),
           bodySmall: TextStyle(
-            color: Color(0x8a000000),
+            color: ColorConstants.Black,
             fontSize: 12,
             fontWeight: FontWeight.w400,
             fontStyle: FontStyle.normal,
