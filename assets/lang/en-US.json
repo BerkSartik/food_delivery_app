@@ -53,19 +53,11 @@
         }
     },
     "navigation": {
-        "bottom": {
-            "explore": "Explore",
-            "events": "Events",
-            "map": "Map",
+        "tabs": {
+            "home": "Home",
+            "favorite": "Favorite",
+            "cart": "Cart",
             "profile": "Profile"
-        },
-        "drawer": {
-            "message": "Message",
-            "calender": "Calender",
-            "bookmark": "Bookmark",
-            "contactUs": "Contact Us",
-            "settings": "Settings",
-            "faq": "F.A.Q"
         }
     },
     "search": {
