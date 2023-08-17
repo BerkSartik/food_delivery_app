@@ -21,6 +21,11 @@
         "email": "Email",
         "password": "Password",
         "or": "OR",
+        "validator": {
+            "blankArea": "This field cannot be blank.",
+            "emailNotValid": "Your e-mail address is not valid.",
+            "passwordMinLength": "Your password must be a minimum of 8 characters."
+        },
         "signUp": {
             "title": "Sign up",
             "fullName": "Full Name",
