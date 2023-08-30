@@ -12,7 +12,7 @@ class MainTabView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: _items.length,
       child: Scaffold(
         body: TabBarView(children: _items.map((e) => e.page).toList()),
         bottomNavigationBar: BottomAppBar(

@@ -14,7 +14,7 @@ class NavigationRoute {
     return switch (NavigationEnums.splash.normalValue(args.name)) {
       NavigationEnums.splash => _normalNavigate(const SplashView()),
       NavigationEnums.onboard => _fadeRouteNavigate(const OnboardView()),
-      NavigationEnums.mainTab => _normalNavigate(MainTabView()),
+      NavigationEnums.mainTab => _fadeRouteNavigate(MainTabView()),
       _ => _normalNavigate(const NotFoundNavigationWidget())
     };
   }
